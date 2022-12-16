@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sideMenu {
+  width: 50px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+}
+.sideMenu ul li {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.sideMenu ul li div {
+  transition: 0.5s;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.sideMenu ul li div:hover {
+  left: -200px;
+}
+.sideMenu ul li div:hover a {
+  display: block;
+  margin-left: 10px;
+  font-size: 30px;
+  color: rgb(1, 1, 77);
+}
+.sideMenu ul li div i {
+  font-size: 50px;
+}
+
+.parent .sibling {
+  position: absolute;
+  margin: 0;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+}
+.parent .sibling:hover {
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
