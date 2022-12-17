@@ -75,31 +75,41 @@
 position: fixed;
   width: 200px;
   height: 100vh;
-  border: 1px solid black;
+  // border: 1px solid black;
   left: -200px;
   transition: 1s;
   
-  
+  i {
+    position: absolute;
+    font-size: 50px;
+    top: 45vh;
+    cursor: pointer;
+  }
 
 .fa-chevron-right {
-  position: absolute;
-  font-size: 50px;
-  top: 45vh;
+  @extend i;
   right: -50px;
+ 
  
 
 }
 
 .fa-chevron-left {
-  position: absolute;
-  font-size: 50px;
-  top: 45vh;
+  @extend i;
   right: -35px;
   display: none;
+ 
   
 }
 
-
-
+div {
+  width: 100%;
+  height: 22vh;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
 
 }
